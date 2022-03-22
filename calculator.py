@@ -10,11 +10,11 @@ Original file is located at
 import time
 class calculator():
     def __init__(self):
-      f = open('/content/Calculator_constrcutor.txt', 'r')
+      f = open('Calculator_constrcutor.txt', 'r')
       content = f.read()
       print(content)
       f.close()
-      history=open('/content/history.txt','w')
+      history=open('history.txt','w')
       history.write("")
       
     def add(self,a,b):
@@ -25,7 +25,7 @@ class calculator():
       a=repr(a)
       b=repr(b)
       r=repr(result)
-      history=open('/content/history.txt','a')
+      history=open('history.txt','a')
       str="- time : "+t+"| action : add  "+a+","+b+"|result : "+r+"\n"
       history.write(str)
       return result
@@ -37,9 +37,8 @@ class calculator():
       a=repr(a)
       b=repr(b)
       r=repr(result)
-      history=open('/content/history.txt','a')
       str="- time : "+t+"| action : multiply  "+a+","+b+"|result : "+r+"\n"
-      history=open('/content/history.txt','a')
+      history=open('history.txt','a')
       history.write(str)
       return result
     def divide(self,a,b):
@@ -51,7 +50,7 @@ class calculator():
       b=repr(b)
       r=repr(result)
       str="- time : "+t+"| action : divide  "+a+","+b+"|result : "+r+"\n"
-      history=open('/content/history.txt','a')
+      history=open('history.txt','a')
       history.write(str)
       return result
     def subtract(self,a,b):
@@ -63,11 +62,11 @@ class calculator():
       b=repr(b)
       r=repr(result)
       str="- time : "+t+"| action : subtract  "+a+","+b+"|result : "+r+"\n"
-      history=open('/content/history.txt','a')
+      history=open('history.txt','a')
       history.write(str)
       return result
     def history(self):
-      history = open('/content/history.txt', 'r')
+      history = open('history.txt', 'r')
       content = history.read()
       print(content)
       history.close()
