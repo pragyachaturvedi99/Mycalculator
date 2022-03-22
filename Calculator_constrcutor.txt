@@ -1,0 +1,6 @@
+**Welcome To Calculator**
+Calculator.add(a, b)		- takes 2 args, a and b, and adds them
+Calculator.subtract(a, b)	- takes 2 args, a and b, and subtracts them
+Calculator.multiply(a, b) 	- takes 2 args, a and b, and multiplies them
+Calculator.divide(a, b)		- takes 2 args, a and b, and divides them
+Calculator.history()		- display the calculator usage history
